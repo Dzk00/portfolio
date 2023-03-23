@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Portfolio</title>
+
+    <link rel="stylesheet" href="assets/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav_logo">
+                <a href="#">jordan</a>
+            </div>
+
+            <div class="right_right">
+                <ul class="social_contact">
+                    <li><a href="https://github.com/Dzk00"><i class="fa-brands fa-github fa"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/jordan-liautaud-847993269/"><i class="fa-brands fa-linkedin-in fa"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-spinner fa"></i></a></li>
+                </ul>
+
+                <div class="toggleBtn" id="toggleBtn">
+
+                </div>
+            </div>
+            <div class="nav_items" id="navMenu">
+                <ul>
+                    <li class="navItem"><a href="#home" class="nav_link active">Accueil</a></li>
+                    <li class="navItem"><a href="#about" class="nav_link">A propos</a></li>
+                    <li class="navItem"><a href="#service" class="nav_link">Expérience</a></li>
+                    <li class="navItem"><a href="#blog" class="nav_link">Réalisations</a></li>
+                    <li class="navItem"><a href="#contact" class="nav_link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="home" id="home">
+            <div class="container">
+                <div class="content" id="home_content">
+                    <h1 class="title">
+                        <span class="titleLight" id="txt1">Jordan </span>
+                        <span class="titleBold">Liautaud</span>
+                    </h1>
+                    <p class="proff">Apprenti Dev Web</p>
+                    <p class="text homeText">Vivant actuellement sur Lille, en France, je suis en formation à distance à
+                        l'AFPA et recherche activement un stage du 17/07/23 au 22/09/23.</p>
+
+                    <div class="btns">
+                        <a href="https://fr.scribd.com/document/633226487/CV-dev?secret_password=cFbgmqhAmdZwacbU39c8"></a><button class="home_button">C.V.</button></a>
+                        <button onclick="location.href='#contact'" class="home_button">Contact</button>
+                    </div>
+
+                    <a href="#about" class="scrollDownBtn">
+                        <i class="fa-solid fa-chevron-down fa"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="info">
+                    <h1 class="title aboutTitle">A propos de Moi</h1>
+                    <p class="text_lg">Developpeur web en cours de formation, j'ai 30 ans et je souhaiterai me
+                        spécialiser dans le développement d'interface utilisateur dynamique et moderne.</p>
+                    <p class="text aboutText">J'ai acquis au fil de mes expériences professionnelles précédentes (aide
+                        soignant, artiste, agent d'accueil et serveur) des compétences relationnelles telles que
+                        l'empathie, la communication efficace et le sens de l'accueil, qui me permettent de travailler
+                        efficacement en équipe et de fournir un service client de qualité.</p>
+                    <img class="sign" src="assets/img/code.png"></img>
+                </div>
+
+
+                <div class="skills">
+                    <h1 class="title">Compétences</h1>
+                    <ul class="skill_bars">
+                        <li style="--i:0" class="progress_bar">CSS</li>
+                        <li style="--i:1" class="progress_bar">Javascript</li>
+                        <li style="--i:2" class="progress_bar">Vue.js</li>
+                        <li style="--i:3" class="progress_bar">Communication</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="service" id="service">
+            <div class="container">
+                <div class="quality">
+                    <h1 class="qua_title">8+</h1>
+                    <p class="qua_text">Années d'expérience <br> En interactions humaines</p>
+                </div>
+
+                <div class="content">
+                    <h1 class="title">N'ayant pas encore d'expérience professionnelle dans le développement web, je met
+                        l'accent sur mes qualités et
+                        compétences acquises dans mes anciens métiers.</h1>
+                    <div class="card_container">
+                        <div class="card_row">
+                            <div class="card about_card">
+                                <i class="fa-solid fa-people-group icons"></i>
+                                <p class="card_title">Travail d'équipe</p>
+                                <p class="text">
+                                    <span>Avancer ensemble.</span>
+                                    <i class="fa-solid fa-thumbs-up fa"></i>
+                                </p>
+                            </div>
+
+                            <div class="card about_card">
+                                <i class="fa-solid fa-book-open-reader icons"></i>
+                                <p class="card_title">Curiosité</p>
+                            </div>
+
+                            <div class="card about_card">
+                                <i class="fa-solid fa-comment icons"></i>
+                                <p class="card_title">Honnêteté</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog" id="blog">
+            <div class="container">
+                <div class="blog_header">
+                    <h1 class="header_title">Mes réalisations, <br> en formation.</h1>
+                    <div class="header_text">
+                        <p class="text">Tous ces sites sont factices et ont été réalisés dans le cadre de ma formation.
+                        </p>
+                        <a href="https://github.com/Dzk00" class="link">Voir mon GitHub<i class="fa-solid fa-arrow-right-long fa"></i></a>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="card blog_card">
+                        <img src="assets/img/blog1.jpg" alt="work1">
+                    </div>
+                    <div class="card blog_card">
+                        <img src="assets/img/blog2.jpg" alt="work2">
+                    </div>
+                    <div class="card blog_card">
+                        <img src="assets/img/blog3.jpg" alt="work3">
+                    </div>
+                    <div class="card blog_card">
+                        <img src="assets/img/blog4.jpg" alt="work4">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="left_content">
+                    <h1 class="title">Disponible</h1>
+                    <p class="text">Je recherche un stage dans le développement web, <br> du 17/07/23 au 22/09/23, 
+                        non rémuneré par l'entreprise <br> car stagiaire de la formation professionnelle .</p>
+                        <div class="social_contact">
+                            <ul>
+                                <li class="contact_icons"><a href="https://www.linkedin.com/in/jordan-liautaud-847993269/"><i class="fa-brands fa-linkedin-in fa"></i></a></li>
+                                <li class="contact_icons"><a href="https://www.facebook.com/jordan.liautaud"><i class="fa-brands fa-facebook-f fa"></i></a></li>
+                                <li class="contact_icons"><a href="https://github.com/Dzk00"><i class="fa-brands fa-github fa"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <a href="https://fr.scribd.com/document/633226487/CV-dev?secret_password=cFbgmqhAmdZwacbU39c8" class="link">
+                            Curriculum Vitae
+                            <i class="fa-solid fa-arrow-right-long fa"></i>
+                        </a>
+                </div>
+
+                <div class="right_content">
+                    <h1 class="title">N'hésitez pas à me contacter <br> pour toute proposition de stage</h1>
+                    <div class="form">
+                        <form action="mailto:liautaud.jordan@gmail.com">
+                            <div class="input_group">
+                                <input type="text" placeholder="Votre Nom">
+                            </div>
+
+                            <div class="input_group">
+                                <input type="text" placeholder="Votre Mail">
+                            </div>
+
+                            <div class="input_group">
+                                <textarea placeholder="Envoi d'un formulaire via js/php en cours d'apprentissage, veuillez utilisez le bouton Send pour m'écrire un mail, merci"></textarea>
+                            </div>
+
+                            <button class="send btn">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="" class="brand footer_brand">
+                jordan
+            </a>
+
+            <ul class="social_contact">
+                <li class="footer_link"><a href="https://www.linkedin.com/in/jordan-liautaud-847993269/"><i class="fa-brands fa-linkedin-in fa"></i></a></li>
+                <li class="footer_link"><a href="https://www.facebook.com/jordan.liautaud"><i class="fa-brands fa-facebook-f fa"></i></a></li>
+                <li class="footer_link"><a href="https://github.com/Dzk00"><i class="fa-brands fa-github fa"></i></a></li>
+                <li class="footer_link"><a href="#"><i class="fa-solid fa-spinner fa"></i></a></li>
+                <li class="footer_link"><a href="#"><i class="fa-solid fa-spinner fa"></i></a></li>
+
+            </ul>
+
+            <p class="copyright_msg">
+                Copyright © 2023. Thanks to Winterfell. <br> Réservé à l'utilisation d'une recherche de stage.
+            </p>
+        </div>
+    </footer>
+
+    <div class="scrollUp" id="scrollUp">
+        <a href="#home">
+            <i class="fa-solid fa-arrow-up-long fa"></i>
+        </a>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
