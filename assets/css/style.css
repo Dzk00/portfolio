@@ -540,7 +540,7 @@ button:hover::before{
     height: 0.8rem;
     background: var(--primary);
     border-radius: 0.6rem;
-    animation: skills 15s linear 1;
+    animation: skills 12s linear 1;
     animation-delay: calc(0.5s * var(--i));
     animation-fill-mode: forwards;
 }
