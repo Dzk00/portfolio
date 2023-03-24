@@ -243,6 +243,8 @@ nav .container .nav_items ul li a.active::before{
     height: 5rem;
     z-index: var(--zi-3);
     cursor: pointer;
+    position: relative;
+    left: 5rem;
 }
 
 .toggleBtn::before{
@@ -931,7 +933,7 @@ footer .container .copyright_msg{
         gap: 6rem;
     }
     .blog .content .card:nth-child(2), .blog .content .card:nth-child(4){
-        transform: translateY(1rem);
+        transform: translateY(0rem);
     }
     .contact{
         margin-top: 0;
