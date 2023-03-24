@@ -395,6 +395,13 @@ section{
     cursor: pointer;
 }
 
+.home .container .btns a{
+    text-decoration: none;
+    font-weight: var(--fw-300);
+    letter-spacing: 0.3rem; 
+    color: var(--light);
+}
+
 .home .container .btns button:nth-child(2){
     background: var(--theme-skin);
     -webkit-text-fill-color: transparent;
@@ -892,7 +899,7 @@ footer .container .copyright_msg{
 }
 
 ::-webkit-scrollbar{
-    width: .8rem;
+    width: .6rem;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -924,7 +931,7 @@ footer .container .copyright_msg{
         gap: 6rem;
     }
     .blog .content .card:nth-child(2), .blog .content .card:nth-child(4){
-        transform: translateY(0);
+        transform: translateY(1rem);
     }
     .contact{
         margin-top: 0;
