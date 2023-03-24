@@ -243,8 +243,6 @@ nav .container .nav_items ul li a.active::before{
     height: 5rem;
     z-index: var(--zi-3);
     cursor: pointer;
-    position: relative;
-    left: 5rem;
 }
 
 .toggleBtn::before{
@@ -397,12 +395,16 @@ section{
     cursor: pointer;
 }
 
-.home .container .btns a{
-    text-decoration: none;
-    font-weight: var(--fw-300);
-    letter-spacing: 0.3rem; 
+/* .home .container .btns a{
+    background: var(--theme-skin);
     color: var(--light);
-}
+    padding: var(--p-1-8);
+    width: 100%;
+    max-width: 14rem;
+    font-weight: var(--fw-300);
+    letter-spacing: 0.3rem;
+    cursor: pointer;
+} */
 
 .home .container .btns button:nth-child(2){
     background: var(--theme-skin);
