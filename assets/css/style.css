@@ -316,7 +316,7 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: calc(50% - 6.78px);
-    transform: scale(1, 1);
+    transform: scale(1.1, 1.1);
     z-index: var(--zi--1);
 }
 /* 
@@ -903,7 +903,7 @@ footer .container .copyright_msg{
 }
 
 ::-webkit-scrollbar{
-    width: .6rem;
+    width: 1rem;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -914,7 +914,9 @@ footer .container .copyright_msg{
     nav .container .right_right ul{
         display: none;
     }
-
+    ::-webkit-scrollbar{
+        width: 0.6rem;
+    }
 }
 
 @media screen and (max-width: 500px){
