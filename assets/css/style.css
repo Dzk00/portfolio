@@ -748,6 +748,7 @@ button:hover::before{
     color: var(--primary-color);
     font-weight: var(--fw-600);
     margin-bottom: var(--m-2-8);
+    padding-right: var(--p-1-2);
 }
 
 .contact .left_content .social_contact ul li{
