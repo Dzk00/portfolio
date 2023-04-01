@@ -56,7 +56,18 @@ window.addEventListener('scroll', ()=>{
 function ouvrirPDF(url) {
     window.open(url, '_blank');
 }
-
+function sushi(url) {
+    window.open(url, '_blank');
+}
+function kyoto(url) {
+    window.open(url, '_blank');
+}
+function hosting(url) {
+    window.open(url, '_blank');
+}
+function georgia(url) {
+    window.open(url, '_blank');
+}
 
 const scrollRevealAnime = ScrollReveal({
     origin: 'top',
