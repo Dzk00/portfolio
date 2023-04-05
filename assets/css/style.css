@@ -336,8 +336,18 @@ section{
 .home .container .content{
     position: absolute;
     top: calc(11vh + 10rem);
-    right: calc(13vw + 1px);
+    left: calc(20vw + 1px);
     max-width: 70%;
+}
+@media screen and (max-width: 800px){
+    .home .container .content{
+        left: calc(15vw + 1px);
+    }
+}
+@media screen and (max-width: 300px){
+    .home .container .content{
+        left: calc(10vw + 1px);
+    }
 }
 
 .home .container h1 span{
@@ -566,10 +576,10 @@ button:hover::before{
 }
 
 .about .container .skills .skill_bars li:nth-child(1)::after{
-    max-width: 60%;
+    max-width: 70%;
 }
 .about .container .skills .skill_bars li:nth-child(2)::after{
-    max-width: 30%;
+    max-width: 50%;
 }
 .about .container .skills .skill_bars li:nth-child(3)::after{
     max-width: 20%;
@@ -930,6 +940,10 @@ footer .container .copyright_msg{
     }
     .home .container h1 span{
         font-size: calc(4vw + var(--fs-3-5));
+    }
+    .home .container .btns{
+        flex-direction: column;
+        align-items: start;
     }
 }
 @media screen and (max-width: 876px){
