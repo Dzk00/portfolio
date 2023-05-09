@@ -587,6 +587,12 @@ button:hover::before{
 .about .container .skills .skill_bars li:nth-child(4)::after{
     max-width: 90%;
 }
+.about .container .skills .skill_bars li:nth-child(5)::after{
+    max-width: 50%;
+}
+.about .container .skills .skill_bars li:nth-child(6)::after{
+    max-width: 60%;
+}
 
 .service{
     padding: calc(8vw + 2.5rem) 0 var(--p-7);
