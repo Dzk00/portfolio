@@ -60,8 +60,8 @@
                         l'AFPA et recherche activement un stage du 17/07/23 au 22/09/23.</p>
 
                     <div class="btns">
-                        <button onclick="ouvrirPDF('assets/pdf/CV-dev.pdf')" class="home_button">C.V.</button>
-                        <button onclick="location.href='#contact'" class="home_button">Contact</button>
+                        <button id="pdf" class="home_button">C.V.</button>
+                        <button id="tocontact" class="home_button">Contact</button>
                     </div>
 
                     <a href="#about" class="scrollDownBtn">
@@ -152,16 +152,16 @@
 
                 <div class="content">
                     <div class="card blog_card">
-                        <img src="assets/img/blog1.jpg" onclick="target('https://dzk00.github.io/sushi/')" alt="work1">
+                        <img src="assets/img/blog1.jpg" id="sushi" alt="work1">
                     </div>
                     <div class="card blog_card">
-                        <img src="assets/img/blog2.jpg" onclick="target('https://dzk00.github.io/kyoto/')" alt="work2">
+                        <img src="assets/img/blog2.jpg" id="kyoto" alt="work2">
                     </div>
                     <div class="card blog_card">
-                        <img src="assets/img/blog3.jpg" onclick="target('https://dzk00.github.io/hosting/')" alt="work3">
+                        <img src="assets/img/blog3.jpg" id="hosting" alt="work3">
                     </div>
                     <div class="card blog_card">
-                        <img src="assets/img/blog4.jpg" onclick="target('https://dzk00.github.io/georgia/')" alt="work4">
+                        <img src="assets/img/blog4.jpg" id="georgia" alt="work4">
                     </div>
                 </div>
             </div>
@@ -205,7 +205,7 @@
 
                             <div class="input_group">
                                 <textarea
-                                    placeholder="Envoi d'un formulaire via js/php en cours d'apprentissage, veuillez utilisez le bouton Send pour m'écrire un mail, merci"></textarea>
+                                    placeholder="Votre message"></textarea>
                             </div>
 
                             <button class="send btn">Send</button>
@@ -245,8 +245,8 @@
             <i class="fa-solid fa-arrow-up-long fa"></i>
         </a>
     </div>
-
+    <script nonce="pioupiou" src="https://unpkg.com/scrollreveal"></script>
     <script nonce="pioupiou" src="assets/js/script.js"></script>
+    <script nonce="pioupiou" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </body>
-
 </html>

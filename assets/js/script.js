@@ -53,12 +53,26 @@ window.addEventListener('scroll', ()=>{
     }
 })
 
-function ouvrirPDF(url) {
-    window.open(url, '_blank');
-}
+document.getElementById('pdf').addEventListener('click', function() {
+    target('assets/pdf/CV-dev.pdf')});
+document.getElementById('sushi').addEventListener('click', function() {
+    target('https://dzk00.github.io/sushi/')});
+document.getElementById('kyoto').addEventListener('click', function() {
+    target('https://dzk00.github.io/kyoto/')});
+document.getElementById('hosting').addEventListener('click', function() {
+    target('https://dzk00.github.io/hosting/')});
+document.getElementById('georgia').addEventListener('click', function() {
+    target('https://dzk00.github.io/georgia/')});
+document.getElementById('tocontact').addEventListener('click', function() {
+    targetnb('#contact')});
+            
 function target(url) {
     window.open(url, '_blank');
 }
+function targetnb() {
+    var contactLayout = document.getElementById('contact');
+    contactLayout.scrollIntoView({ behavior: 'smooth' });
+  }
 
 const scrollRevealAnime = ScrollReveal({
     origin: 'top',
