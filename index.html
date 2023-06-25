@@ -13,12 +13,29 @@
 
     <link rel="stylesheet" href="assets/fontawesome-free-6.3.0-web/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script nonce="pioupiou" type="text/Javascript">
-        (function () {
-            emailjs.init("NdqBgqC7QWBgLnmIa");
-        })
+    <script nonce="pioupiou" type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script nonce="pioupiou" type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('NdqBgqC7QWBgLnmIa');
+        })();
     </script>
-    <script nonce="pioupiou" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script nonce="pioupiou" type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_tuuwa2n', 'template_5o5kif3', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -198,23 +215,25 @@
 
                 <div class="right_content">
                     <h1 class="title">N'hésitez pas à me contacter <br> pour toute proposition de stage</h1>
-                    <div class="form">
-                        <form action="">
+                    <div id="formtest" class="form">
+                        <form action="" id="contact-form">
+                            <input type="hidden" name="contact_number">
                             <div class="input_group">
-                                <input id="name" type="text" placeholder="Votre Nom">
+                                <input id="name" name="user_name" type="text" placeholder="Votre Nom">
                             </div>
 
                             <div class="input_group">
-                                <input id="mail" type="text" placeholder="Votre Mail">
+                                <input id="email" name="user_email" type="text" placeholder="Votre Mail">
                                 <p>Veuillez entrez un email valide.</p>
                             </div>
 
                             <div class="input_group">
-                                <textarea id="msg"
+                                <textarea id="message" name="message"
                                     placeholder="Votre message"></textarea>
                             </div>
 
-                            <button id="sendform" class="send btn">Send</button>
+                            <input type="submit" id="sendform" class="send btn">
+
                         </form>
                     </div>
                 </div>

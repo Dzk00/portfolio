@@ -104,26 +104,15 @@ scrollRevealAnime.reveal(`.titleLight,
                          });
 
 
-document.getElementById('sendform').addEventListener('click', function() {
-    sendMail()});
+// document.getElementById('sendform').addEventListener('click', function() {
+//     sendMail()});
 
-function sendMail() {
-    var params = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("mail").value,
-        message: document.getElementById("msg").value,
-    };
-
-    const serviceID = "service_tuuwa2n";
-    const templateID = "template_5o5kif3";
-    
-    emailjs.send(serviceID, templateID, params).then((res) => {
-            document.getElementById("name").value = "";
-            document.getElementById("mail").value = "";
-            document.getElementById("msg").value = "";
-            console.log(res);
-            alert("OK BOI");
-        })
-        .cath((err) => console.log(err));
-}
+// function sendMail() {    
+//     emailjs.sendForm("service_tuuwa2n", "template_5o5kif3", '#formtest', "NdqBgqC7QWBgLnmIa")
+//     .then(function(response) {
+//         console.log('SUCCESS!', response.status, response.text);
+//      }, function(error) {
+//         console.log('FAILED...', error);
+//     });
+// }
 

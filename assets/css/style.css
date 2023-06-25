@@ -783,7 +783,7 @@ button:hover::before{
     height: 15rem;
 }
 
-.contact .right_content form button{
+.contact .right_content form #sendform{
     background: var(--primary);
     color: var(--light);
     font-weight: var(--fw-500);
