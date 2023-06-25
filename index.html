@@ -195,7 +195,7 @@
                     <div class="form">
                         <form action="">
                             <div class="input_group">
-                                <input type="text" placeholder="Votre Nom">
+                                <input id="name" type="text" placeholder="Votre Nom">
                             </div>
 
                             <div class="input_group">
@@ -204,11 +204,11 @@
                             </div>
 
                             <div class="input_group">
-                                <textarea
+                                <textarea id="msg"
                                     placeholder="Votre message"></textarea>
                             </div>
 
-                            <button class="send btn">Send</button>
+                            <button id="sendform"class="send btn">Send</button>
                         </form>
                     </div>
                 </div>
@@ -248,5 +248,10 @@
     <script nonce="pioupiou" src="https://unpkg.com/scrollreveal"></script>
     <script nonce="pioupiou" src="assets/js/script.js"></script>
     <script nonce="pioupiou" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script nonce="pioupiou" type="text/Javascript">
+        (function () {
+            emailjs.init("ois3QCopknIxvEi54");
+        })
+    </script>
 </body>
 </html>
