@@ -110,20 +110,19 @@ document.getElementById('sendform').addEventListener('click', function() {
 function sendMail() {
     var params = {
         name: document.getElementById("name").value,
-        mail: document.getElementById("mail").value,
+        email: document.getElementById("mail").value,
         message: document.getElementById("msg").value,
     };
+
     const serviceID = "service_tuuwa2n";
     const templateID = "template_5o5kif3";
     
-    emailjs
-        .send(serviceID, templateID, params)
-        .then((res) => {
+    emailjs.send(serviceID, templateID, params).then((res) => {
             document.getElementById("name").value = "";
-            document.getElementById("name").value = "";
-            document.getElementById("name").value = "";
+            document.getElementById("mail").value = "";
+            document.getElementById("msg").value = "";
             console.log(res);
-            alert("OK BOI")
+            alert("OK BOI");
         })
         .cath((err) => console.log(err));
 }
