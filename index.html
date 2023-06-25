@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'none'">
+    <meta http-equiv="Content-Security-Policy" content="script-src assets">
     <title>Jordan Portfolio</title>
 
     <link rel="stylesheet" href="assets/fontawesome-free-6.3.0-web/css/all.min.css">
@@ -190,13 +190,14 @@
                 <div class="right_content">
                     <h1 class="title">N'hésitez pas à me contacter <br> pour toute proposition de stage</h1>
                     <div class="form">
-                        <form action="mailto:liautaud.jordan@gmail.com">
+                        <form action="">
                             <div class="input_group">
                                 <input type="text" placeholder="Votre Nom">
                             </div>
 
                             <div class="input_group">
-                                <input type="text" placeholder="Votre Mail">
+                                <input id="mail" type="text" placeholder="Votre Mail">
+                                <p>Veuillez entrez un email valide.</p>
                             </div>
 
                             <div class="input_group">
@@ -242,7 +243,6 @@
         </a>
     </div>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="assets/js/script.js"></script>
 </body>
 

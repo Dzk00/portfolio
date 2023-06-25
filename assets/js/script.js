@@ -89,4 +89,28 @@ scrollRevealAnime.reveal(`.titleLight,
                             interval: 200,
                          });
 
-                         
+  function envoyerFormulaire(form) {
+    form.preventDefault(); // Empêche le rechargement de la page
+    
+    // Récupère les valeurs des champs du formulaire
+    var nom = form.nom.value;
+    var email = form.email.value;
+    var message = form.message.value;
+
+
+
+    // Envoie les données du formulaire à EmailJS
+    emailjs.send("service_tuuwa2n", "template_5o5kif3", {
+      name: nom,
+      email: email,
+      message: message
+    }).then(function(response) {
+      console.log("E-mail envoyé avec succès !", response.status, response.text);
+    }, function(error) {
+      console.log("Erreur lors de l'envoi de l'e-mail :", error);
+    });
+
+    // Réinitialise le formulaire
+    form.reset();
+  }
+
