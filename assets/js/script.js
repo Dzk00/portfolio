@@ -103,16 +103,3 @@ scrollRevealAnime.reveal(`.titleLight,
                             interval: 200,
                          });
 
-
-// document.getElementById('sendform').addEventListener('click', function() {
-//     sendMail()});
-
-// function sendMail() {    
-//     emailjs.sendForm("service_tuuwa2n", "template_5o5kif3", '#formtest', "NdqBgqC7QWBgLnmIa")
-//     .then(function(response) {
-//         console.log('SUCCESS!', response.status, response.text);
-//      }, function(error) {
-//         console.log('FAILED...', error);
-//     });
-// }
-
